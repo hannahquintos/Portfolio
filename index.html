@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hannah Quintos - Home</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+        <script src="https://kit.fontawesome.com/331b268247.js" crossorigin="anonymous"></script>
+        <script src="javascript/portfolio.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="contentWrapper" id="header">
+                <div id="headerLogo">
+                    <img id="headerLogoImage" src="./images/logo.svg" alt="Hannah Quintos Logo with initials h.q. inside a circle.">
+                </div>
+                <nav>
+                    <ul id="inlineMenu">
+                        <li class="deadNav"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="work.html">My Work</a></li>
+                        <!-- <li><a href="contact.html">Contact</a></li> -->
+                    </ul>
+                    <button aria-label="Hamburger menu" onclick="openDropdown()" class="menuButton" id="hamburgerMenu" type="button" name="openDropdownButton"><i class="fa-sharp fa-solid fa-bars fa-2xl"></i></button>
+                    <button aria-label="Close menu" onclick="closeDropdown()" class="menuButton" id="closeButton" type="button" name="closeDropdownButton"><i class="fa-sharp fa-solid fa-x fa-2xl"></i></button>
+                </nav>
+            </div>
+            <div id="dropdownMenu">
+                <div class="contentWrapper">
+                    <ul>
+                        <li class="deadNav"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="work.html">My Work</a></li>
+                        <!-- <li><a href="contact.html">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="introSection" class="contentWrapper">
+                <div id="bio" class="pageHeading">
+                    <h1>Hello, I'm Hannah.</h1>
+                    <p id="introText">I'm a <span class="boldText">web developer</span> based in Mississauga, Ontario. I love to code, create, and problem solve!</p>
+                    <!-- <button onclick="window.location.href='#';" type="button" id="aboutMeButton">About Me</button> -->
+                    <div id="emailAddress">
+                        <img src="./images/email.svg" alt="Email icon">
+                        <p>hannah@quintos.com</p>
+                    </div>
+                </div>
+                <div id="introImage">
+                    <img id="computerGraphic" src="./images/computer.svg" alt="An illustration of a girl (Hannah Quintos), with black hair and a pink t-shirt, working on a laptop.">
+                </div>
+            </div>
+            <div id="featuredWorkSection">
+                <div class="contentWrapper">
+                    <h2 id="featuredWorkHeading">Take a look</h2>
+                    <div id="featuredWorkImgs">
+                        <div class="featuredWork">
+                            <img src="./images/feelin-radish.png" alt="A preview of a wellness blog page.">
+                            <h3 class="featuredWorkName">Feelin' Radish</h3>
+                        </div>
+                        <div class="featuredWork">
+                            <img src="./images/roll-and-read.png" alt="A preview of a book board game application.">
+                            <h3 class="featuredWorkName">Roll and Read</h3>
+                        </div>
+                        <div class="featuredWork">
+                            <img src="./images/joyful-boba.png" alt="A preview of a boba web game.">
+                            <h3 class="featuredWorkName">Joyful Boba</h3>
+                        </div>
+                        <!-- <img id="featuredWork1" class="featureWorkImg" src="./images/feelin-radish.png" alt="A preview of a wellness blog page.">
+                        <img id="featuredWork2" class="featureWorkImg" src="./images/roll-and-read.png" alt="A preview of a bakery website redesign.">
+                        <img id="featuredWork3" class="featureWorkImg" src="./images/rahier.png" alt="A preview of a book board game application."> -->
+                </div>
+                </div>
+            </div>
+            <div id="contactSection" class="contentWrapper">
+                <div id="contactImage">
+                    <img id="skillsGraphic" src="./images/skills.svg" alt="An illustration of a girl (Hannah Quintos) and coding languages (HTML, JS, CSS, SQL, C++, C#)">
+                </div>
+                <div id="form">
+                    <form method="post">
+                        <div>
+                            <h2 id="formHeading">Let's make something great together</h2>
+                        </div>
+                        <div>
+                            <label for="name">Name</label>
+                        </div>
+                        <div>
+                            <input type="text" id="name" name="userName">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                        </div>
+                        <div>
+                            <input type="text" id="email" name="userEmail">
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                        </div>
+                        <div>
+                            <textarea id="message" name="userMessage"></textarea>
+                        </div>
+                        <div id="sumbit">
+                            <button id="submitButton" type="submit" name="contact">Get in touch</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer" class="contentWrapper">
+                <div id="copyright" >&copy; Copyright Hannah Quintos, 2023.</div>
+                <div id="socials">
+                    <a href="https://github.com/hannahquintos"><img src="./images/github.svg" alt="GitHub logo"></a>
+                    <a href="https://ca.linkedin.com/in/hannah-quintos-572a99210"><img src="./images/linkedin.svg" alt="LinkedIn logo"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

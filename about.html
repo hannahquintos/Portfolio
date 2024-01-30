@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hannah Quintos - About</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+        <script src="https://kit.fontawesome.com/331b268247.js" crossorigin="anonymous"></script>
+        <script src="javascript/portfolio.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="contentWrapper" id="header">
+                <div id="headerLogo">
+                    <img id="headerLogoImage" src="./images/logo.svg" alt="Hannah Quintos Logo with initials h.q. inside a circle.">
+                </div>
+                <nav>
+                    <ul id="inlineMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="deadNav"><a href="about.html">About</a></li>
+                        <li><a href="work.html">My Work</a></li>
+                        <!-- <li><a href="contact.html">Contact</a></li> -->
+                    </ul>
+                    <button aria-label="Hamburger menu" onclick="openDropdown()" class="menuButton" id="hamburgerMenu" type="button" name="openDropdownButton"><i class="fa-sharp fa-solid fa-bars fa-2xl"></i></button>
+                    <button aria-label="Close menu" onclick="closeDropdown()" class="menuButton" id="closeButton" type="button" name="closeDropdownButton"><i class="fa-sharp fa-solid fa-x fa-2xl"></i></button>
+                </nav>
+            </div>
+            <div id="dropdownMenu">
+                <div class="contentWrapper">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="deadNav"><a href="about.html">About</a></li>
+                        <li><a href="work.html">My Work</a></li>
+                        <!-- <li><a href="contact.html">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="contentWrapper">
+                <div class="pageHeading">
+                    <h1>Get to Know Me!</h1>
+                </div>
+                <div class="pageContent">
+                    <div id="aboutSection">
+                        <img id="profileGraphic" src="./images/profile.svg" alt="An illustration of a girl (Hannah Quintos), with black hair and a blue t-shirt.">
+                        <div id="profileParagraph">
+                            <p>I am a motivated hard-working individual with a passion for creating media. I have a Bachelor's in Psychology and a background in media production and design. With my unique mix of skills, I am able to draw on my understanding of human behaviour to enhance digital experiences. I am currently pursuing a Web Development graduate certificate at Humber College to further develop my skills and gain experience creating innovative web solutions.</p>
+                        </div>
+                    </div>
+                    <div id="aboutRectangle"></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer" class="contentWrapper">
+                <div id="copyright" >&copy; Copyright Hannah Quintos, 2023.</div>
+                <div id="socials">
+                    <a href="https://github.com/hannahquintos"><img src="./images/github.svg" alt="GitHub logo"></a>
+                    <a href="https://ca.linkedin.com/in/hannah-quintos-572a99210"><img src="./images/linkedin.svg" alt="LinkedIn logo"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
