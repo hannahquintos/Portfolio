@@ -594,9 +594,8 @@ footer{
     }
 
     #submitButton{
-        width: 100px;
+        width: 120px;
         font-size: 14px;
-        width: 100px;
         height: 30px;
         border-radius: 5px;
     }
