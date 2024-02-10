@@ -173,6 +173,7 @@ main{
     /* flex container */
     display: flex;
     gap: 1em;
+    align-items: center;
 }
 
 #introImage{
