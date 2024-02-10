@@ -303,7 +303,9 @@ textarea{
 #submitButton{
     background-color: var(--navy);
     color: white;
-    width: 189px;
+    width: auto;
+    padding-left: 1em;
+    padding-right: 1em;
     height: 50px;
     font-weight: 600;
     font-size: 20px;
@@ -594,7 +596,6 @@ footer{
     }
 
     #submitButton{
-        width: 120px;
         font-size: 14px;
         height: 30px;
         border-radius: 5px;
