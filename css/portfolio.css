@@ -157,11 +157,9 @@ main{
 
 .pageHeading{
     padding-top: 40px;
-    /* padding-bottom: 120px; */
 }
 
 #bio{
-    /* padding-top: 40px; */
     padding-bottom: 120px;
     /* flex container */
     display: flex;
@@ -351,8 +349,6 @@ footer{
 
 /* ABOUT PAGE */
 #aboutSection{
-    padding-left: 20px;
-    padding-right: 20px;
     /* flex container */
     display: flex;
     gap: 50px;
@@ -473,18 +469,13 @@ footer{
         gap: 5px;
     }
 
-    #headshot{
-        /* border-radius: 5%; */
-    }
-
     #profileHeadshot{
-        /* flex: 1; */
         width: 50%;
         margin: auto;
     }
 
     #profileParagraph{
-        /* flex: 2; */
+        width: 100%;
     }
 
     /* MY WORK PAGE */
