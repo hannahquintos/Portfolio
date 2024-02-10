@@ -78,7 +78,7 @@
                     <img id="skillsGraphic" src="./images/skills.svg" alt="An illustration of a girl (Hannah Quintos) and coding languages (HTML, JS, CSS, SQL, C++, C#)">
                 </div>
                 <div id="form">
-                    <form action="mailto:hannah@quintos.com" method="post" enctype="text/plain">
+                    <form action="https://formspree.io/f/xzbnenqe" method="post">
                         <div>
                             <h2 id="formHeading">Let's make something great together</h2>
                         </div>
@@ -86,22 +86,23 @@
                             <label for="name">Name</label>
                         </div>
                         <div>
-                            <input type="text" id="name" name="userName">
+                            <input type="text" id="name" name="Name" required>
                         </div>
                         <div>
                             <label for="email">Email</label>
                         </div>
                         <div>
-                            <input type="text" id="email" name="userEmail">
+                            <input type="text" id="email" name="Email" required>
                         </div>
                         <div>
                             <label for="message">Message</label>
                         </div>
                         <div>
-                            <textarea id="message" name="userMessage"></textarea>
+                            <textarea id="message" name="Message" required></textarea>
                         </div>
                         <div id="sumbit">
-                            <button id="submitButton" type="submit" name="contact">Get in touch</button>
+                            <!-- <button id="submitButton" type="submit" name="contact">Get in touch</button> -->
+                            <input type="submit" value="Get in touch" id="submitButton">
                         </div>
                     </form>
                 </div>

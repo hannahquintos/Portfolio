@@ -21,3 +21,10 @@ function closeDropdown(){
   hamburgerButton.style.display = "block";
   closeButton.style.display = "none";
 }
+
+//reset form after it's sent
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
