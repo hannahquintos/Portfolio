@@ -211,15 +211,23 @@ h1{
     color: white;
 }
 
+#introBottom{
+    background-color: var(--navy);
+    height: 50px;
+    position: relative;
+    z-index: -1;
+    top: -47px;
+}
+
 /* -- 3b. Featured Work Section */
 #featuredWorkSection{
     background-color: var(--navy);
     color: white;
-    padding-top: 35px;
+    padding-top: 20px;
     padding-bottom: 56px;
     position: relative;
-    top: -47px;
-    z-index: -1;
+    top: -50px;
+    /* z-index: -1; */
 }
 
 #featuredWorkImgs{
@@ -436,9 +444,13 @@ footer{
         padding-bottom: 170px;
     }
 
+    #introBottom{
+        top: -31px;
+    }
+
     /* -- 3b. Featured Work Section */
     #featuredWorkSection{
-        top: -31px;
+        top: -35px;
     }
 
     #featuredWorkImgs{
@@ -563,9 +575,14 @@ footer{
         min-width: 200px;
     }
 
+    #introBottom{
+        top: -23.5px;
+    }
+
     /* -- 3b. Featured Work Section */
     #featuredWorkSection{
-        top: -23.5px;
+        top: -26px;
+        padding-top: 0;
     }
 
     #featuredWorkImgs{

@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter ;
+    line-height: 24px;
+    background-color: #F9EBC9;
+    color: #4B5F60;
+    margin: 0;
+}
+
+.contentWrapper{
+    max-width: 1366px;
+    margin: 0;
+    padding: 0 115px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#headerLogo{
+    background-color: #BDD3E1;
+    padding: 0.5em;
+}
+
+#headerLogoImage, #footerLogoImg{
+    height: 8em;
+    display: flex;
+}
+
+#headerLogoImage{
+    margin: auto;
+}
+
+#navMenu{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0;
+    background-color: white;
+    list-style-type: none;
+    /* flex container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+}
+
+a{
+    color:#4B5F60;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FB6162;
+}
+
+a:active {
+    color: #BDD3E1;
+}
+
+#imageOverlay{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+h1{
+    line-height: normal;
+}
+
+#articleImage{
+    max-width: 100%;
+    border-radius: 2em;
+}
+
+#pillars{
+    text-align: center;
+    /* flex container */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 1em 0 1em 0;
+}
+
+.pillar{
+    /* flex item. */
+    flex-basis: 0;
+    flex-grow: 1;
+
+    background-color: #FFF3D4;
+    border-radius: 3em;
+    padding: 0 1em 0 1em;
+}
+
+.pillarImage{
+    height: 10em ;
+}
+
+#buildingSelfCompassion{
+    padding-bottom: 3em;
+}
+
+#exercisesSite{
+    text-decoration: underline;
+    color: #FB6162
+}
+
+#exercisesSite:hover{
+    color: #54945A;
+}
+
+#exercisesSite:active{
+    color: #BDD3E1;
+}
+
+#content{
+    /* flex container */
+    display: flex;
+    gap: 3em;
+    flex-wrap: wrap;
+    /* padding: 1.5em 12em 1.5em 12em; */
+    padding-top: 4em;
+    margin-top: 180px;
+}
+
+#article{
+    /* 3 times the width of the aside */
+    flex-basis: 0;
+    flex-grow: 3;
+}
+
+aside{
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-bottom: 4em;
+}
+
+.asideContainer{
+    background-color: #FFF3D4;
+    padding: 0.25em 2em 0.25em 2em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.asideHeading{
+    border-bottom: 0.5px solid #4B5F60;
+}
+
+.link{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.links{
+    padding: 0;
+}
+
+#commentSection{
+    background-color: #FFF3D4;
+    border-radius: 2em;
+    padding: 1em 2em 1em 2em;
+    margin-bottom: 2em;
+}
+
+input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #BDD3E1;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+input{
+    padding: 8px;
+}
+
+textarea{
+    padding: 10px;
+    height: 100px;
+}
+
+button{
+    background-color: #4B5F60;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.5em;
+    border: 2px solid #4B5F60;
+    color: white;
+    margin-bottom: 1em;
+}
+
+button:hover{
+    border: 2px solid white;
+}
+
+button:active{
+    background-color: #BDD3E1;
+    border: 2px solid white;
+}
+
+#postButton{
+    text-align: right;
+}
+
+.commentIcon{
+    width: 3em;
+}
+
+.comment{
+    /* flex container */
+    display: flex;
+    gap: 1em;
+}
+
+.commentInfo{
+    border-bottom: 0.5px solid #4B5F60;
+    margin-bottom: 1em;
+}
+
+.commentName{
+    font-weight: bold;
+}
+
+footer{
+    background-color: #BDD3E1;
+}
+
+#footerContent{
+    /* flex container */
+    display: flex;
+    gap: 5em;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 0.5px solid #4B5F60;
+    padding: 1em 0;
+}
+
+#footerLogo{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+#stayConnected{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+#joinEmailList{
+    /* flex container */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#copyright{
+    padding: 1em 0;
+}
+
+
+/* Media Query - Tablet */
+@media screen and (max-width:768px){
+
+    #content{
+        flex-direction: column;
+    }
+
+    .contentWrapper{
+        max-width: 768px;
+        padding: 0 66px;
+    }
+
+    #articleImage{
+        border-radius: 1em;
+    }
+    
+    #footerContent{
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+}
+
+/* Media Query - Phone */
+@media screen and (max-width:480px){
+    .contentWrapper{
+        max-width: 480px;
+        padding: 0 37px;
+    }
+
+    #joinEmailList{
+        flex-direction: column;
+    }
+}

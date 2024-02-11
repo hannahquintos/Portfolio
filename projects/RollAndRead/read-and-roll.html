@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Roll and Read</title>
+    <link rel="stylesheet" type="text/css" href="roll-and-read.css">
+    <script src="roll-and-read.js"></script>
+  </head>
+  <body>
+    <div id="game">
+          <div id="board">
+                <!-- row-1 -->
+                      <!-- row1-col1 (1) -->
+                      <div class="boardSpace" id="space12" data-value="A book in a series">
+                        <img class="moveHereImg" id="moveHereImg-space12" src="./images/move-here.svg">
+                        <img class="token" id="token-space12" src="./images/token.svg">
+                      </div>
+                      <!-- row1-col2 (2) -->
+                      <div class="boardSpace" id="space13" data-value="A romance book">
+                        <img class="moveHereImg" id="moveHereImg-space13" src="./images/move-here.svg">
+                        <img class="token" id="token-space13" src="./images/token.svg">
+                      </div>
+                      <!-- row1-col3 (3) -->
+                      <div class="boardSpace" id="space14" data-value="A fantasy book">
+                        <img class="moveHereImg" id="moveHereImg-space14" src="./images/move-here.svg">
+                        <img class="token" id="token-space14" src="./images/token.svg">
+                      </div>
+                      <!-- row1-col4 (4) -->
+                      <div class="boardSpace" id="space15" data-value="Any book of your choosing">
+                        <img class="moveHereImg" id="moveHereImg-space15" src="./images/move-here.svg">
+                        <img class="token" id="token-space15" src="./images/token.svg">
+                      </div>
+                      <!-- row1-col5 (5) -->
+                      <div class="boardSpace" id="space16" data-value="A new release">
+                        <img class="moveHereImg" id="moveHereImg-space16" src="./images/move-here.svg">
+                        <img class="token" id="token-space16" src="./images/token.svg">
+                      </div>
+                      <!-- row1-col6 (6) -->
+                      <div class="boardSpace" id="space17" data-value="A thriller/mystery book">
+                        <img class="moveHereImg" id="moveHereImg-space17" src="./images/move-here.svg">
+                        <img class="token" id="token-space17" src="./images/token.svg">
+                      </div>
+                      <!-- row1-col7 (7) -->
+                      <div class="boardSpace" id="space18" data-value="A romance book">
+                        <img class="moveHereImg" id="moveHereImg-space18" src="./images/move-here.svg">
+                        <img class="token" id="token-space18" src="./images/token.svg">
+                      </div>
+                <!-- row-2 -->
+                      <!-- row2-col1 (8) -->
+                      <div class="boardSpace" id="space11" data-value="A thriller/mystery book">
+                        <img class="moveHereImg" id="moveHereImg-space11" src="./images/move-here.svg">
+                        <img class="token" id="token-space11" src="./images/token.svg">
+                      </div>
+                      <!-- row2-6-col2-6 (9) -->
+                      <div class="boardSpace" id="boardMiddle">
+                          <div id="popup"></div>
+                          <div id="card">
+                            <p id="cardBookPrompt"></p>
+                            <button type="button" id="completeButton">Complete</button>
+                          </div>
+                      </div>
+                      <!-- row2-col7 (10) -->
+                      <div class="boardSpace" id="space19" data-value="A fantasy book">
+                        <img class="moveHereImg" id="moveHereImg-space19" src="./images/move-here.svg">
+                        <img class="token" id="token-space19" src="./images/token.svg">
+                      </div>
+                <!-- row-3 -->
+                      <!-- row3-col1 (11) -->
+                      <div class="boardSpace" id="space10" data-value="A new release">
+                        <img class="moveHereImg" id="moveHereImg-space10" src="./images/move-here.svg">
+                        <img class="token" id="token-space10" src="./images/token.svg">
+                      </div>
+                      <!-- row3-col7 (12) -->
+                      <div class="boardSpace" id="space20" data-value="A book in a series">
+                        <img class="moveHereImg" id="moveHereImg-space20" src="./images/move-here.svg">
+                        <img class="token" id="token-space20" src="./images/token.svg">
+                      </div>
+                <!-- row-4 -->
+                      <!-- row4-col1 (13) -->
+                      <div class="boardSpace" id="space9" data-value="A romance book">
+                        <img class="moveHereImg" id="moveHereImg-space9" src="./images/move-here.svg">
+                        <img class="token" id="token-space9" src="./images/token.svg">
+                      </div>
+                      <!-- row4-col7 (14) -->
+                      <div class="boardSpace" id="space21" data-value="Any book of your choosing">
+                        <img class="moveHereImg" id="moveHereImg-space21" src="./images/move-here.svg">
+                        <img class="token" id="token-space21" src="./images/token.svg">
+                      </div>
+                <!-- row-5 -->
+                      <!-- row5-col1 (15) -->
+                      <div class="boardSpace" id="space8" data-value="A fantasy book">
+                        <img class="moveHereImg" id="moveHereImg-space8" src="./images/move-here.svg">
+                        <img class="token" id="token-space8" src="./images/token.svg">
+                      </div>
+                      <!-- row5-col7 (16) -->
+                      <div class="boardSpace" id="space22" data-value="A new release">
+                        <img class="moveHereImg" id="moveHereImg-space22" src="./images/move-here.svg">
+                        <img class="token" id="token-space22" src="./images/token.svg">
+                      </div>
+                <!-- row-6 -->
+                      <!-- row6-col1 (17) -->
+                      <div class="boardSpace" id="space7" data-value="Any book of your choosing">
+                        <img class="moveHereImg" id="moveHereImg-space7" src="./images/move-here.svg">
+                        <img class="token" id="token-space7" src="./images/token.svg">
+                      </div>
+                      <!-- row6-col7 (18) -->
+                      <div class="boardSpace" id="space23" data-value="A thriller/mystery book">
+                        <img class="moveHereImg" id="moveHereImg-space23" src="./images/move-here.svg">
+                        <img class="token" id="token-space23" src="./images/token.svg">
+                      </div>
+                <!-- row-7 -->
+                      <!-- row7-col1 (19) -->
+                      <div class="boardSpace" id="space6" data-value="A book in a series">
+                        <img class="moveHereImg" id="moveHereImg-space6" src="./images/move-here.svg">
+                        <img class="token" id="token-space6" src="./images/token.svg">
+                      </div>
+                      <!-- row7-col2 (20) -->
+                      <div class="boardSpace" id="space5" data-value="A thriller/mystery book">
+                        <img class="moveHereImg" id="moveHereImg-space5" src="./images/move-here.svg">
+                        <img class="token" id="token-space5" src="./images/token.svg">
+                      </div>
+                      <!-- row7-col3 (21) -->
+                      <div class="boardSpace" id="space4" data-value="A new release">
+                        <img class="moveHereImg" id="moveHereImg-space4" src="./images/move-here.svg">
+                        <img class="token" id="token-space4" src="./images/token.svg">
+                      </div>
+                      <!-- row7-col4 (22) -->
+                      <div class="boardSpace" id="space3" data-value="A fantasy book">
+                        <img class="moveHereImg" id="moveHereImg-space3" src="./images/move-here.svg">
+                        <img class="token" id="token-space3" src="./images/token.svg">
+                      </div>
+                      <!-- row7-col5 (23) -->
+                      <div class="boardSpace" id="space2" data-value="A book in a series">
+                        <img class="moveHereImg" id="moveHereImg-space2" src="./images/move-here.svg">
+                        <img class="token" id="token-space2" src="./images/token.svg">
+                      </div>
+                      <!-- row7-col6 (24) -->
+                      <div class="boardSpace" id="space1" data-value="A romance book">
+                        <img class="moveHereImg" id="moveHereImg-space1" src="./images/move-here.svg">
+                        <img class="token" id="token-space1" src="./images/token.svg">
+                      </div>
+                      <!-- row7-col7 (25) -->
+                      <div class="boardSpace" id="space0" data-value="Any book of your choosing">
+                        <img class="moveHereImg" id="moveHereImg-space0" src="./images/move-here.svg">
+                        <img class="token" id="token-space0" src="./images/token.svg">
+                        <div id="start">
+                          <!-- <p>GO<p> -->
+                        </div>
+                      </div>
+          </div>
+          <div id="sidePanel">
+            <div id="heroText">
+                <h1>Welcome to Hannah's Roll and Read Challenge!</h1>
+                <p id="gameDescription">A board game to make choosing books and reading more fun.</p>
+                <ul id="instructions">
+                  <li>Click the dice to begin</li>
+                  <li>To move your bookworm, click the board space where the cursor icon appears</li>
+                  <li>You will recieve a book prompt. Read a book that fits with the prompt and add to your bookshelf</li>
+                  <li>Make it all the way around the board to complete the game!</li>
+                </ul>
+            </div>
+            <div id="console">
+                <p id="errorText">*Complete this turn before rolling again*</p>
+                <div id="diceRoll">
+                    <h2>Click dice to roll:</h2>
+                    <div id="dice">
+                      <p>5</p>
+                    </div>
+                </div>
+                <div id="bookPrompts">
+                  <h3 id="bookshelfHeading">Your Bookshelf</h3>
+                  <div id="bookshelf">
+                    <img src="./images/series.svg">
+                    <img src="./images/romance.svg">
+                    <img src="./images/fantasy.svg">
+                  </div>
+                </div>
+            </div>
+          </div>
+  </div>
+  <div id="reward">
+    <h2>Game Complete!</h2>
+    <p>Congrats. You made it all the way around the board. Reward yourself and buy a new book!</p>
+    <div id="booksRead">
+      <div id="finalBookshelf">
+        <img src="./images/series.svg">
+        <img src="./images/romance.svg">
+        <img src="./images/fantasy.svg">
+      </div>
+      <h3 id="numBooksRead">You read 3 books:</h3>
+      <ol id="booksReadList">
+        <li>A book in a series</li>
+        <li>A romance book</li>
+        <li>A fantasy book</li>
+      </ol>
+    </div>
+  </div>
+  </body>
+</html>

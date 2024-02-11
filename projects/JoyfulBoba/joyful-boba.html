@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Joyful Boba</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="javascript/script.js"></script>
+  </head>
+  <body>
+     <header>
+      <div id="header" class="contentWrapper">
+        <img id="logo" src="./images/logo.svg" alt="Logo with a bubble tea illustration and the text Joyful Boba.">
+        <nav>
+          <nav>
+            <ul id="inlineMenu">
+                <li class="deadNav"><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        </nav>
+      </div>
+     </header>
+     <main>
+        <div id="drinkSection">
+          <img id="drinkDispenser" src="./images/drink-dispenser.svg" alt="A drink dispenser.">
+          <div id="cup">
+            <div id="cupFill">
+              <div id="tapiocaContainer">
+                <div id="cupTapioca1" class="cupTapioca"></div>
+                <div id="cupTapioca2" class="cupTapioca"></div>
+                <div id="cupTapioca3" class="cupTapioca"></div>
+                <div id="cupTapioca4" class="cupTapioca"></div>
+                <div id="cupTapioca5" class="cupTapioca"></div>
+                <div id="cupTapioca6" class="cupTapioca"></div>
+                <div id="cupTapioca7" class="cupTapioca"></div>
+                <div id="cupTapioca8" class="cupTapioca"></div>
+              </div>
+              <div id="mangoJellyContainer">
+                <div id="cupMango1" class="cupMango"></div>
+                <div id="cupMango2" class="cupMango"></div>
+                <div id="cupMango3" class="cupMango"></div>
+                <div id="cupMango4" class="cupMango"></div>
+                <div id="cupMango5" class="cupMango"></div>
+                <div id="cupMango6" class="cupMango"></div>
+                <div id="cupMango7" class="cupMango"></div>
+                <div id="cupMango8" class="cupMango"></div>
+              </div>
+              <div id="coconutContainer">
+                <div id="cupCoconut1" class="cupCoconut"></div>
+                <div id="cupCoconut2" class="cupCoconut"></div>
+                <div id="cupCoconut3" class="cupCoconut"></div>
+                <div id="cupCoconut4" class="cupCoconut"></div>
+                <div id="cupCoconut5" class="cupCoconut"></div>
+                <div id="cupCoconut6" class="cupCoconut"></div>
+                <div id="cupCoconut7" class="cupCoconut"></div>
+                <div id="cupCoconut8" class="cupCoconut"></div>
+              </div>
+              <div id="redbeanContainer">
+                <div id="cupRedbean1" class="cupRedbean"></div>
+                <div id="cupRedbean2" class="cupRedbean"></div>
+                <div id="cupRedbean3" class="cupRedbean"></div>
+                <div id="cupRedbean4" class="cupRedbean"></div>
+                <div id="cupRedbean5" class="cupRedbean"></div>
+                <div id="cupRedbean6" class="cupRedbean"></div>
+                <div id="cupRedbean7" class="cupRedbean"></div>
+                <div id="cupRedbean8" class="cupRedbean"></div>
+              </div>
+              <div id="straw"></div>
+            </div>
+          </div>
+          <div id="liquid"></div>
+          <div id="counter"></div>
+        </div>
+        <div id="buildDrinkSection">
+          <h1 id="buildHeading">Build a Boba</h1>
+          <button onclick="startBuilding()" type="button" id="startButton">start</button>
+          <div class="bubbleTeasContainer">
+            <img class="bubbleTeasImg" src="./images/bubble-teas.svg" alt="Taro, mango, strawberry, and matcha bubble teas.">
+          </div>
+        </div>
+        <div id="addFlavourSection">
+          <div id="flavourContent">
+            <h2 id="flavoursHeading">Choose a flavour</h2>
+            <div id="flavours">
+              <div id="taro">
+                <h3>taro</h3>
+                <button onclick="addTaro()" type="button" class="flavourButton"><img src="./images/taro.svg" class="flavourButtonImg" alt="Taro bubble tea."></button>
+              </div>
+              <div id="mango">
+                <h3>mango</h3>
+                <button onclick="addMango()" type="button" class="flavourButton"><img src="./images/mango.svg" class="flavourButtonImg" alt="Mango bubble tea."></button>
+              </div>
+              <div id="strawberry">
+                <h3>strawberry</h3>
+                <button onclick="addStrawberry()" type="button" class="flavourButton"><img src="./images/strawberry.svg" class="flavourButtonImg" alt="Strawberry bubble tea."></button>
+              </div>
+              <div id="matcha">
+                <h3>matcha</h3>
+                <button onclick="addMatcha()" type="button" class="flavourButton"><img src="./images/matcha.svg" class="flavourButtonImg" alt="Matcha bubble tea."></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="addToppingSection">
+          <div id="toppingsContent">
+            <h2 id="toppingsHeading">Choose a topping</h2>
+            <div id="toppings">
+              <div id="tapioca">
+                <h3>tapioca</h3>
+                <button onclick="addTapioca()" type="button" class="toppingButton"><img src="./images/tapioca.svg" class="toppingButtonImg" alt="Tapioca pearls."></button>
+              </div>
+              <div id="mangoJelly">
+                <h3>mango</h3>
+                <button onclick="addMangoJelly()" type="button" class="toppingButton"><img src="./images/mango-jelly.svg" class="toppingButtonImg" alt="Mango jelly."></button>
+              </div>
+              <div id="coconutJelly">
+                <h3>coconut</h3>
+                <button onclick="addCoconutJelly()" type="button" class="toppingButton"><img src="./images/coconut-jelly.svg" class="flavourButtonImg" alt="Coconut jelly."></button>
+              </div>
+              <div id="redBean">
+                <h3>red bean</h3>
+                <button onclick="addRedbean()" type="button" class="toppingButton"><img src="./images/red-bean.svg" class="flavourButtonImg" alt="Red bean."></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="doneSection">
+          <div id="doneContent">
+            <h2 id="doneHeading">All done!</h2>
+            <button onclick="addStraw()" type="button" id="strawButton">add a straw</button>
+            <button onclick="restart()" type="button" id="restartButton">restart</button>
+            <div class="bubbleTeasContainer">
+              <img class="bubbleTeasImg" src="./images/bubble-teas.svg" alt="Taro, mango, strawberry, and matcha bubble teas.">
+            </div>
+          </div>
+        </div>
+     </main>
+     <footer class="contentWrapper">
+        <div id="copyright" >&copy; Copyright Hannah Quintos, 2023.</div>
+     </footer>
+  </body>
+</html>
