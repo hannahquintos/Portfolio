@@ -258,6 +258,15 @@ h1{
     text-align: center;
 }
 
+.featuredWork:hover{
+    transform: scale(1.05);
+}
+
+a.featuredLink{
+    text-decoration: none;
+    color: inherit;
+}
+
 /* -- 3c. Contact Section */
 #contactSection{
     margin-top: 29px;
