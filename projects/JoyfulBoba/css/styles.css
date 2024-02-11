@@ -1172,10 +1172,9 @@ main{
 /* 4. FOOTER */
 footer{
     background-color: var(--orange);
-    height: 65px;
+    height: calc(100vh - 730px);
+    /* height: 65px; */
     color: var(--blue);
-}
-
-#copyright{
-    padding-top: 0.5em;
+    display: flex;
+    align-items: center;
 }
