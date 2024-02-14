@@ -56,7 +56,7 @@ function pageReady(){
             //popup message
             var popup = document.getElementById("popup");
             popup.style.display = "block";
-            popup.innerHTML = "You rolled a " + numberRolled + ". Click to the space move.";
+            popup.innerHTML = "You rolled a " + numberRolled + ". Click the space to move.";
 
 
             // /* 2. MOVE TOKEN */
