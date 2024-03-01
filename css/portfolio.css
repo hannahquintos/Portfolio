@@ -262,11 +262,6 @@ h1{
     transform: scale(1.05);
 }
 
-a.featuredLink{
-    text-decoration: none;
-    color: inherit;
-}
-
 /* -- 3c. Contact Section */
 #contactSection{
     margin-top: 29px;
@@ -387,21 +382,43 @@ footer{
 /* MY WORK PAGE */
 #allProjects{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 25px;
 }
+
 .project{
     border: 1px solid var(--navy);
     border-radius: 10px;
     padding: 32px;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 1.5em;
 }
 
-.project:hover{
+/* .project:hover{
     border: 3px solid var(--navy);
+} */
+
+.projectBtn{
+    /* background-color: var(--navy); */
+    width: 100px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--navy);
 }
 
-.projectName{
-    padding-top: 25px;
+.projectBtn a{
+    color: var(--navy);
+}
+
+.projectBtn:hover{
+    background-color: var(--pink);
 }
 
 /* 5. MEDIA QUERIES */
@@ -500,10 +517,10 @@ footer{
     }
 
     /* MY WORK PAGE */
-    #allProjects{
-        display: grid;
+
+    .project{
         grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 1.5em;
     }
 }
 
