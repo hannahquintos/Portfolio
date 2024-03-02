@@ -258,6 +258,12 @@ h1{
     text-align: center;
 }
 
+.featuredWork p{
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 8px;
+}
+
 .featuredWork:hover{
     transform: scale(1.05);
 }
@@ -419,6 +425,22 @@ footer{
 
 .projectBtn:hover{
     background-color: var(--pink);
+}
+
+/* GRAND SLAM STATS */
+
+.projectPages{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+    padding-top: 1em;
+}
+
+.projectPages h2{
+    font-size: 1em;
+    font-weight: 600;
+    color: dimgrey;
+    padding-bottom: 0.5em;
 }
 
 /* 5. MEDIA QUERIES */
@@ -664,5 +686,19 @@ footer{
     #footer{
         flex-direction: column-reverse;
         gap: 23px;
+    }
+
+    /* MY WORK PAGE */
+    .projectBtn{
+        font-size: 14px;
+        height: 30px;
+        border-radius: 5px;
+        width: 80px;
+    }
+
+    /* GRAND SLAM STATS */
+
+    .projectPages{
+        grid-template-columns: 1fr;
     }
 }
