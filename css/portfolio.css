@@ -456,7 +456,7 @@ footer{
     padding-bottom: 56.25%;
 }
 
-#bookshelfPlaylistsVideo{
+.video{
     position: absolute;
     top: 0;
     left: 0;
