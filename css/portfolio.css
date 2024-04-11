@@ -238,11 +238,17 @@ h1{
     row-gap: 37px;
 }
 
+#featuredWorkImgs .featuredLink{
+    flex-grow: 1;
+    display: flex;
+}
+
 .featureWorkImg{
     border: 5px solid white;
     border-radius: 10px;
     background-color: white;
     width: 27%;
+    flex: 1;
 }
 
 .featuredWork{
