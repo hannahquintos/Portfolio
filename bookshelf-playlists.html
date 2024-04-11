@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Grand Slam Stats</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+        <script src="https://kit.fontawesome.com/331b268247.js" crossorigin="anonymous"></script>
+        <script src="javascript/portfolio.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="contentWrapper" id="header">
+                <div id="headerLogo">
+                    <img id="headerLogoImage" src="./images/logo.svg" alt="Hannah Quintos Logo with initials h.q. inside a circle.">
+                </div>
+                <nav>
+                    <ul id="inlineMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="deadNav"><a href="work.html">My Work</a></li>
+                        <!-- <li><a href="contact.html">Contact</a></li> -->
+                    </ul>
+                    <button aria-label="Hamburger menu" onclick="openDropdown()" class="menuButton" id="hamburgerMenu" type="button" name="openDropdownButton"><i class="fa-sharp fa-solid fa-bars fa-2xl"></i></button>
+                    <button aria-label="Close menu" onclick="closeDropdown()" class="menuButton" id="closeButton" type="button" name="closeDropdownButton"><i class="fa-sharp fa-solid fa-x fa-2xl"></i></button>
+                </nav>
+            </div>
+            <div id="dropdownMenu">
+                <div class="contentWrapper">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="deadNav"><a href="work.html">My Work</a></li>
+                        <!-- <li><a href="contact.html">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="contentWrapper">
+                <div class="pageHeading">
+                    <h1>Bookshelf Playlists</h1>
+                </div>
+                <div class="pageContent">
+                    <div>
+                        <p>A website that integrates the Google Books API and Spotify API to create a platform that pairs books with curated music playlists, enriching the reading experience.</p>
+                        <p>Built with Node.js, Pug, and CSS. </p>
+                    </div>
+                    <div class="projectPages">
+                        <div>
+                            <h2>Video Demo</h2>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/GyQPLYml5LE?si=8KI6PAYkTV_PBH8t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer" class="contentWrapper">
+                <div id="copyright" >&copy; Copyright Hannah Quintos, 2024.</div>
+                <div id="socials">
+                    <a href="https://github.com/hannahquintos"><img src="./images/github.svg" alt="GitHub logo"></a>
+                    <a href="https://ca.linkedin.com/in/hannah-quintos"><img src="./images/linkedin.svg" alt="LinkedIn logo"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
