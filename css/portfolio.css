@@ -443,6 +443,21 @@ footer{
     padding-bottom: 0.5em;
 }
 
+/* BOOKSHELF PLAYLISTS */
+
+#videoContainer{
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+#bookshelfPlaylistsVideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* 5. MEDIA QUERIES */
 
 /* --5a. Tablet */
